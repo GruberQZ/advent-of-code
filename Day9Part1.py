@@ -2,6 +2,5 @@
 file = open('day9part1.txt','r')
 
 for line in file:
-	data = file.readline()
-	splitdata = data.split(' ', 5)
-	print(splitdata[0] + splitdata[2] + str(splitdata[4]))
+	data = line.split(' ', 4)
+	print(data[0] + data[2] + str(data[4]))
